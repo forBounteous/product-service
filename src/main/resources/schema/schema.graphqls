@@ -1,0 +1,16 @@
+
+type User @key(fields: "id") @extends {
+    id: ID! @external
+    products: [Product]
+}
+
+type Product {
+    id: ID!
+    name: String
+    description: String
+}
+
+type Query {
+    searchByText(text: String!): [Product]
+    allProducts: [Product]
+}

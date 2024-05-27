@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: product-service
+  data:
+    mongodb:
+      uri: mongodb+srv://root:root@cluster0.b0kton6.mongodb.net/
+      database: productDB
+server:
+  port: 8083
